@@ -3,7 +3,9 @@
 {% block title %}{{post.title}}{% endblock %}
 
 {% block content %}
+<center>
 <h1>{{post.title}}</h1>
-<p><img src = "{{ post.image.url }}"></p>
-{{post.text}}
+<img src = "{{ post.image.url }}" width="1000px" height="600px"></center>
+<font size="3" face="Verdana"><p class="tags">Тэги: {{ post.tags.all|join:", " }}</p></font>
+{{post.text|linebreaks}}
 {% endblock %}
