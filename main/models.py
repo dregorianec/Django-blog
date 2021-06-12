@@ -15,6 +15,7 @@ class Post(models.Model):
     author = models.ManyToManyField(User)
     title = models.CharField(max_length=50)
     text = models.TextField()
+    image = models.ImageField(upload_to='images')
     data = models.DateTimeField(auto_now=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
 
