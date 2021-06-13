@@ -6,7 +6,12 @@
 <div class="articles">
     {% for post in posts %}
     <article>
-        <h3><a href="http://127.00.00.1:8000/post/{{post.id}}">{{post.title}}</a></h3>
+        <font face="Arial" size="5"><a href="http://127.00.00.1:8000/post/{{post.id}}">{{post.title}}</a>
+        </font>
+
+        <font face="Century Modern"><br>Автор: admin &nbsp;&nbsp;&nbsp;&nbsp;</font>
+        <font face="Century Modern" class="tags">Тэги: {{ post.tags.all|join:", " }}</font>
+        <br>
     </article>
     <hr>
     {% endfor %}
