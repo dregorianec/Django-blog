@@ -1,7 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from .models import Post
-from taggit.models import Tag
-from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def index_page(request):

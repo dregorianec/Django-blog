@@ -6,6 +6,5 @@
 <center>
 <h1>{{post.title}}</h1>
 <img src = "{{ post.image.url }}" width="1000px" height="600px"></center>
-<font size="3" face="Verdana"><p class="tags">Тэги: {{ post.tags.all|join:", " }}</p></font>
 <font face="Arial" size = "5">{{post.text|linebreaks}}</font>
 {% endblock %}
