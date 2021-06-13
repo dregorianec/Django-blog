@@ -35,7 +35,6 @@ Pillow==7.0.0
 pipwin==0.5.0
 psutil==5.7.3
 py-kaomoji==0.1.3.6
-PyAudio @ file:///C:/Users/User/pipwin/PyAudio-0.2.11-cp37-cp37m-win_amd64.whl
 pygame==1.9.6
 pyglet==1.5.10
 PyInstaller==3.6
